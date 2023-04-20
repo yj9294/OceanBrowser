@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LaunchVC" customModule="OceanBrowser" customModuleProvider="target">
+            <connections>
+                <outlet property="progressView" destination="wUC-zM-1Y2" id="xlN-Ru-A6Q"/>
+                <outlet property="view" destination="dj8-6l-Lim" id="anK-Tg-pvg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="dj8-6l-Lim">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="hTl-3S-97S">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wUC-zM-1Y2">
+                    <rect key="frame" x="80" y="774" width="233" height="4"/>
+                    <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </progressView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="8mU-Gz-rU9">
+                    <rect key="frame" x="127.66666666666669" y="259" width="138" height="105"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="IEV-We-gjP"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="hTl-3S-97S" firstAttribute="top" secondItem="dj8-6l-Lim" secondAttribute="top" id="04X-cF-FWH"/>
+                <constraint firstItem="IEV-We-gjP" firstAttribute="bottom" secondItem="wUC-zM-1Y2" secondAttribute="bottom" constant="40" id="206-AO-74o"/>
+                <constraint firstItem="8mU-Gz-rU9" firstAttribute="top" secondItem="IEV-We-gjP" secondAttribute="top" constant="200" id="2qw-o6-5uk"/>
+                <constraint firstItem="8mU-Gz-rU9" firstAttribute="centerX" secondItem="dj8-6l-Lim" secondAttribute="centerX" id="Iox-dy-xgX"/>
+                <constraint firstAttribute="trailing" secondItem="hTl-3S-97S" secondAttribute="trailing" id="Ltg-Pt-P5m"/>
+                <constraint firstItem="hTl-3S-97S" firstAttribute="leading" secondItem="dj8-6l-Lim" secondAttribute="leading" id="fld-1X-a7B"/>
+                <constraint firstAttribute="bottom" secondItem="hTl-3S-97S" secondAttribute="bottom" id="h9N-hk-93b"/>
+                <constraint firstItem="wUC-zM-1Y2" firstAttribute="leading" secondItem="IEV-We-gjP" secondAttribute="leading" constant="80" id="j36-tp-Vde"/>
+                <constraint firstItem="IEV-We-gjP" firstAttribute="trailing" secondItem="wUC-zM-1Y2" secondAttribute="trailing" constant="80" id="yAX-Mv-5Fu"/>
+            </constraints>
+            <point key="canvasLocation" x="-51" y="-206"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg" width="360" height="760"/>
+        <image name="logo" width="138" height="105"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

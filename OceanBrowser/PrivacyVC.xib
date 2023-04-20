@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrivacyVC" customModule="OceanBrowser" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qNM-ef-BYw">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhA-hq-IXL">
+                            <rect key="frame" x="16" y="5" width="34" height="34"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="back"/>
+                            <connections>
+                                <action selector="backAction" destination="-1" eventType="touchUpInside" id="Gfs-6B-MlN"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ig-Mw-b0Y">
+                            <rect key="frame" x="151.66666666666666" y="13.666666666666671" width="89.666666666666657" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="LF8-7F-UrR"/>
+                        <constraint firstItem="XhA-hq-IXL" firstAttribute="leading" secondItem="qNM-ef-BYw" secondAttribute="leading" constant="16" id="YbM-ZF-7JH"/>
+                        <constraint firstItem="5Ig-Mw-b0Y" firstAttribute="centerY" secondItem="qNM-ef-BYw" secondAttribute="centerY" id="fTP-3g-92B"/>
+                        <constraint firstItem="XhA-hq-IXL" firstAttribute="centerY" secondItem="qNM-ef-BYw" secondAttribute="centerY" id="yZp-Fx-2po"/>
+                        <constraint firstItem="5Ig-Mw-b0Y" firstAttribute="centerX" secondItem="qNM-ef-BYw" secondAttribute="centerX" id="yx0-ge-Qae"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J1Y-kR-GLV">
+                    <rect key="frame" x="20" y="111" width="353" height="691"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <mutableString key="text">What information will we collect
+Browser type, language preferences, recommended websites, and the date and time requested by each visitor.
+Usage data: mobile device type, IP address of the mobile device, your mobile operating system, type of mobile internet browser you are using, device identifier, fault log, and diagnostic data.
+Contact information: The email address you used to contact us.
+How will we use this information
+Data analysis of application download and usage status.
+Fix bugs
+Used to provide personalized advertising services.
+For the purpose specified by law.
+Disclosure of information 
+We may disclose your information for the following purposes.
+We have third party partners and service providers who will collect your information as set forth in their privacy policies. If you need to, please visit the privacy policies of these third parties yourself
+When you contact us via phone or email, we will provide you with feedback.
+Data analysis, in order to improve services
+For advertising and marketing purposes
+
+Children's Privacy
+Our services are not directed to persons under the age of 18. 
+Update 
+The updated content will be notified on this page
+Contact us
+yiguvi36@outlook.com</mutableString>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="J1Y-kR-GLV" secondAttribute="bottom" constant="16" id="NVW-O0-pyS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qNM-ef-BYw" secondAttribute="trailing" id="PLw-RC-QyJ"/>
+                <constraint firstItem="J1Y-kR-GLV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="WpA-wO-XUP"/>
+                <constraint firstItem="qNM-ef-BYw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gqZ-iZ-R4D"/>
+                <constraint firstItem="qNM-ef-BYw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="lOw-4s-Pre"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="J1Y-kR-GLV" secondAttribute="trailing" constant="20" id="o3g-Nm-lDz"/>
+                <constraint firstItem="J1Y-kR-GLV" firstAttribute="top" secondItem="qNM-ef-BYw" secondAttribute="bottom" constant="8" id="tvf-d7-GSx"/>
+            </constraints>
+            <point key="canvasLocation" x="60" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="34" height="34"/>
+    </resources>
+</document>

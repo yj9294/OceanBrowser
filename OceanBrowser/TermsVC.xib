@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TermsVC" customModule="OceanBrowser" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7B-j9-azj">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUJ-MD-q8F">
+                            <rect key="frame" x="16" y="5" width="34" height="34"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="back"/>
+                            <connections>
+                                <action selector="backAction" destination="-1" eventType="touchUpInside" id="zlu-64-mfE"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of Use" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgH-xy-RpK">
+                            <rect key="frame" x="153.66666666666666" y="13.666666666666671" width="85.666666666666657" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="LUJ-MD-q8F" firstAttribute="leading" secondItem="g7B-j9-azj" secondAttribute="leading" constant="16" id="AnI-2r-J6A"/>
+                        <constraint firstItem="hgH-xy-RpK" firstAttribute="centerX" secondItem="g7B-j9-azj" secondAttribute="centerX" id="Kj3-NG-s5k"/>
+                        <constraint firstItem="hgH-xy-RpK" firstAttribute="centerY" secondItem="g7B-j9-azj" secondAttribute="centerY" id="WOn-yx-15h"/>
+                        <constraint firstItem="LUJ-MD-q8F" firstAttribute="centerY" secondItem="g7B-j9-azj" secondAttribute="centerY" id="ro2-nW-xhM"/>
+                        <constraint firstAttribute="height" constant="44" id="yDy-Td-PRl"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="djw-9j-B3i">
+                    <rect key="frame" x="20" y="111" width="353" height="725"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">Use of the application
+Downloading and using our application means accepting our privacy policy
+We may discontinue the application without prior notice to you
+Update
+The updated content will be notified on this page
+Contact us
+yiguvi36@outlook.com</string>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="g7B-j9-azj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="2r3-Xa-YgX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="djw-9j-B3i" secondAttribute="trailing" constant="20" id="L31-oM-IvI"/>
+                <constraint firstItem="g7B-j9-azj" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="dgr-ER-PUO"/>
+                <constraint firstItem="djw-9j-B3i" firstAttribute="top" secondItem="g7B-j9-azj" secondAttribute="bottom" constant="8" id="emF-Pd-Cyv"/>
+                <constraint firstItem="djw-9j-B3i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="fl8-ic-SVx"/>
+                <constraint firstAttribute="bottom" secondItem="djw-9j-B3i" secondAttribute="bottom" constant="16" id="lLh-Rh-XBz"/>
+                <constraint firstItem="g7B-j9-azj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="q8w-yQ-JcO"/>
+            </constraints>
+            <point key="canvasLocation" x="53" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="34" height="34"/>
+    </resources>
+</document>

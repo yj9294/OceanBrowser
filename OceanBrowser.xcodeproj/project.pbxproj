@@ -35,7 +35,7 @@
 		C7D3C76429F11B6200109330 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = C7D3C76329F11B6200109330 /* FirebaseCrashlytics */; };
 		C7D3C76629F11B6200109330 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = C7D3C76529F11B6200109330 /* FirebaseRemoteConfig */; };
 		C7D3C76929F11BA000109330 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = C7D3C76829F11BA000109330 /* FacebookCore */; };
-		C7D3C76B29F1283F00109330 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7D3C76A29F1283F00109330 /* GoogleService-Info.plist */; };
+		C7D3C77829F137BF00109330 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7D3C77729F137BE00109330 /* GoogleService-Info.plist */; };
 		C7D6F4D429EE83C900045FCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D6F4D329EE83C900045FCC /* AppDelegate.swift */; };
 		C7D6F4D629EE83C900045FCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D6F4D529EE83C900045FCC /* SceneDelegate.swift */; };
 		C7D6F4DD29EE83CB00045FCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D6F4DC29EE83CB00045FCC /* Assets.xcassets */; };
@@ -66,7 +66,7 @@
 		C794AB8E29EE93F60063D83B /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		C794AB9129EE99800063D83B /* AppUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtil.swift; sourceTree = "<group>"; };
 		C794AB9329EE9B170063D83B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		C7D3C76A29F1283F00109330 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C7D3C77729F137BE00109330 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C7D6F4D029EE83C900045FCC /* OceanBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OceanBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D6F4D329EE83C900045FCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7D6F4D529EE83C900045FCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,8 +137,8 @@
 				C7D6F4DC29EE83CB00045FCC /* Assets.xcassets */,
 				C794AB9329EE9B170063D83B /* Main.storyboard */,
 				C7D6F4DE29EE83CB00045FCC /* LaunchScreen.storyboard */,
+				C7D3C77729F137BE00109330 /* GoogleService-Info.plist */,
 				C7D6F4E129EE83CB00045FCC /* Info.plist */,
-				C7D3C76A29F1283F00109330 /* GoogleService-Info.plist */,
 			);
 			path = OceanBrowser;
 			sourceTree = "<group>";
@@ -213,7 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7D3C76B29F1283F00109330 /* GoogleService-Info.plist in Resources */,
+				C7D3C77829F137BF00109330 /* GoogleService-Info.plist in Resources */,
 				C712953529EFBDA3007D8B1C /* ListVC.xib in Resources */,
 				C712954129EFD623007D8B1C /* TermsVC.xib in Resources */,
 				C712953929EFC58C007D8B1C /* ListCell.xib in Resources */,
@@ -405,7 +405,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.perfectt.bbrowsers;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bros.oceanapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -440,7 +440,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.perfectt.bbrowsers;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bros.oceanapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

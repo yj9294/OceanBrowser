@@ -3,32 +3,32 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>315486457248-gucg9mntiq763ug0pr6fe8fu2m8jpgc1.apps.googleusercontent.com</string>
+	<string>1091779885103-hd4t5onsh56u4qritlmapb4g87a8cdi7.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.315486457248-gucg9mntiq763ug0pr6fe8fu2m8jpgc1</string>
+	<string>com.googleusercontent.apps.1091779885103-hd4t5onsh56u4qritlmapb4g87a8cdi7</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAo6hHPnxsSkzq8scnGIu8dxXj-ysYrD84</string>
+	<string>AIzaSyB7L3kONIZIRSveUUUFDyD08I1S0h0K3NQ</string>
 	<key>GCM_SENDER_ID</key>
-	<string>315486457248</string>
+	<string>1091779885103</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.perfectt.bbrowsers</string>
+	<string>com.bros.oceanapp</string>
 	<key>PROJECT_ID</key>
-	<string>perfect-browser-df85b</string>
+	<string>ocean-browser-2c2d2</string>
 	<key>STORAGE_BUCKET</key>
-	<string>perfect-browser-df85b.appspot.com</string>
+	<string>ocean-browser-2c2d2.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:315486457248:ios:a7531b7082e2ec3625e8c5</string>
+	<string>1:1091779885103:ios:74005afe67d9dc578a2eda</string>
 </dict>
 </plist>

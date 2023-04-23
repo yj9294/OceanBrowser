@@ -21,6 +21,8 @@
 	<string>915bef9cdaf453a661411f751f9f3391</string>
 	<key>FacebookDisplayName</key>
 	<string>OceanBrowser</string>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-6377672389404483~4786062201</string>
 	<key>GADIsAdManagerApp</key>
 	<true/>
 	<key>GADNativeAdValidatorEnabled</key>

@@ -20,13 +20,12 @@ class LaunchVC: UIViewController {
         didSet {
             progressView.progress = Float(progress)
             if progress > 1.0 {
-                progress = 1.0
                 launched()
             }
         }
     }
     
-    var duration = 3.0
+    var duration = 16.0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,12 +41,18 @@ class LaunchVC: UIViewController {
 extension LaunchVC {
     
     func launching() {
+        GADUtil.share.load(.interstitial)
+        GADUtil.share.load(.native)
         progress = 0
-        duration = 3.0
+        duration = 16.0
         timer.schedule(deadline: .now(), repeating: 0.01)
         timer.setEventHandler {
             DispatchQueue.main.async {
                 self.progress += (0.01 / self.duration)
+            }
+            
+            if self.progress > 3.0 / 16.0, GADUtil.share.isLoaded(.interstitial) {
+                self.duration = 0.1
             }
         }
         timer.resume()
@@ -56,7 +61,11 @@ extension LaunchVC {
     func launched() {
         progress = 0.0
         timer.suspend()
-        rootVC?.selectedIndex = 1
+        GADUtil.share.show(.interstitial) { _ in
+            if self.progress == 0.0 {
+                rootVC?.selectedIndex = 1
+            }
+        }
     }
     
 }

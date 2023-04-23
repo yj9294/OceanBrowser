@@ -25,6 +25,9 @@ class HomeVC: UIViewController, UITextFieldDelegate, WKNavigationDelegate, WKUID
     @IBOutlet weak var settingView: UIView!
     @IBOutlet weak var cleanView: UIView!
     
+    @IBOutlet weak var adView: GADNativeView!
+    var willAppear = false
+    
     var date: Date = Date()
 
 
@@ -33,6 +36,7 @@ class HomeVC: UIViewController, UITextFieldDelegate, WKNavigationDelegate, WKUID
         IQKeyboardManager.shared.enable = true
         browserCollection.register(UINib(nibName: "HomeBrowserCell", bundle: .main), forCellWithReuseIdentifier: "HomeBrowserCell")
         bottomCollection.register(UINib(nibName: "HomeBottomCell", bundle: .main), forCellWithReuseIdentifier: "HomeBottomCell")
+        gadObserve()
         Task{
             if !Task.isCancelled {
                 try await Task.sleep(nanoseconds: 2_000_000_000)
@@ -46,12 +50,19 @@ class HomeVC: UIViewController, UITextFieldDelegate, WKNavigationDelegate, WKUID
         refreshStatus()
         BrowserUtil.shared.addedWebView(from: self)
         
+        willAppear = true
+        GADUtil.share.load(.native)
+        GADUtil.share.load(.interstitial)
+        
         FirebaseUtil.log(event: .homeShow)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         BrowserUtil.shared.removeWebView()
+        
+        willAppear = false
+        GADUtil.share.disappear(.native)
     }
     
     override func viewDidLayoutSubviews() {
@@ -77,6 +88,22 @@ class HomeVC: UIViewController, UITextFieldDelegate, WKNavigationDelegate, WKUID
 }
 
 extension HomeVC {
+    
+    func gadObserve() {
+        NotificationCenter.default.addObserver(forName: .nativeUpdate, object: nil, queue: .main) { [weak self] noti in
+            guard let self = self else { return }
+            if let ad = noti.object as? NativeADModel, self.willAppear {
+                if Date().timeIntervalSince1970 - (GADUtil.share.homeNativeAdImpressionDate ?? Date(timeIntervalSinceNow: -11)).timeIntervalSince1970 > 10 {
+                    self.adView.nativeAd = ad.nativeAd
+                    GADUtil.share.homeNativeAdImpressionDate = Date()
+                } else {
+                    NSLog("[ad] 10s home 原生广告刷新或数据填充间隔.")
+                }
+            } else {
+                self.adView.nativeAd = nil
+            }
+        }
+    }
     
     func refreshStatus() {
         stopButton.isHidden = !BrowserUtil.shared.isLoading

@@ -36,6 +36,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         
         FirebaseApp.configure()
+        
+        GADUtil.share.requestRemoteConfig()
 
     }
 
@@ -63,6 +65,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             FirebaseUtil.log(event: .openHot)
         }
         enterbackground = false
+        
+        if let vc = window?.rootViewController?.presentedViewController {
+            vc.dismiss(animated: true)
+        }
         root.selectedIndex = 0
     }
 

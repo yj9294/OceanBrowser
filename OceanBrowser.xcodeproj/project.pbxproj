@@ -23,6 +23,12 @@
 		C712954429EFDFC0007D8B1C /* CleanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C712954229EFDFC0007D8B1C /* CleanVC.swift */; };
 		C712954529EFDFC0007D8B1C /* CleanVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C712954329EFDFC0007D8B1C /* CleanVC.xib */; };
 		C712954729EFE211007D8B1C /* FirebaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C712954629EFE211007D8B1C /* FirebaseUtil.swift */; };
+		C735609029F26DF8007408F6 /* GAD+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735608F29F26DF8007408F6 /* GAD+Ext.swift */; };
+		C735609229F26E0F007408F6 /* GADNativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735609129F26E0F007408F6 /* GADNativeView.swift */; };
+		C735609529F27392007408F6 /* GADConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = C735609429F27391007408F6 /* GADConfig.json */; };
+		C7510BDD29F25EED00CD423C /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = C7510BDC29F25EED00CD423C /* GoogleMobileAds */; };
+		C7510BDF29F2683C00CD423C /* GADUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7510BDE29F2683C00CD423C /* GADUtil.swift */; };
+		C75FDCDE29F4FCF00034D7BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C75FDCDD29F4FCF00034D7BD /* GoogleService-Info.plist */; };
 		C794AB8729EE92030063D83B /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794AB8529EE92030063D83B /* RootVC.swift */; };
 		C794AB8B29EE93E90063D83B /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794AB8929EE93E90063D83B /* LaunchVC.swift */; };
 		C794AB8C29EE93E90063D83B /* LaunchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C794AB8A29EE93E90063D83B /* LaunchVC.xib */; };
@@ -35,7 +41,6 @@
 		C7D3C76429F11B6200109330 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = C7D3C76329F11B6200109330 /* FirebaseCrashlytics */; };
 		C7D3C76629F11B6200109330 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = C7D3C76529F11B6200109330 /* FirebaseRemoteConfig */; };
 		C7D3C76929F11BA000109330 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = C7D3C76829F11BA000109330 /* FacebookCore */; };
-		C7D3C77829F137BF00109330 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7D3C77729F137BE00109330 /* GoogleService-Info.plist */; };
 		C7D6F4D429EE83C900045FCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D6F4D329EE83C900045FCC /* AppDelegate.swift */; };
 		C7D6F4D629EE83C900045FCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D6F4D529EE83C900045FCC /* SceneDelegate.swift */; };
 		C7D6F4DD29EE83CB00045FCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D6F4DC29EE83CB00045FCC /* Assets.xcassets */; };
@@ -59,6 +64,11 @@
 		C712954229EFDFC0007D8B1C /* CleanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanVC.swift; sourceTree = "<group>"; };
 		C712954329EFDFC0007D8B1C /* CleanVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CleanVC.xib; sourceTree = "<group>"; };
 		C712954629EFE211007D8B1C /* FirebaseUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUtil.swift; sourceTree = "<group>"; };
+		C735608F29F26DF8007408F6 /* GAD+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GAD+Ext.swift"; sourceTree = "<group>"; };
+		C735609129F26E0F007408F6 /* GADNativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GADNativeView.swift; sourceTree = "<group>"; };
+		C735609429F27391007408F6 /* GADConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GADConfig.json; sourceTree = "<group>"; };
+		C7510BDE29F2683C00CD423C /* GADUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GADUtil.swift; sourceTree = "<group>"; };
+		C75FDCDD29F4FCF00034D7BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C794AB8529EE92030063D83B /* RootVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootVC.swift; sourceTree = "<group>"; };
 		C794AB8929EE93E90063D83B /* LaunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
 		C794AB8A29EE93E90063D83B /* LaunchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchVC.xib; sourceTree = "<group>"; };
@@ -66,7 +76,6 @@
 		C794AB8E29EE93F60063D83B /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		C794AB9129EE99800063D83B /* AppUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtil.swift; sourceTree = "<group>"; };
 		C794AB9329EE9B170063D83B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		C7D3C77729F137BE00109330 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C7D6F4D029EE83C900045FCC /* OceanBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OceanBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D6F4D329EE83C900045FCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7D6F4D529EE83C900045FCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7510BDD29F25EED00CD423C /* GoogleMobileAds in Frameworks */,
 				C7D3C76429F11B6200109330 /* FirebaseCrashlytics in Frameworks */,
 				C7D3C76929F11BA000109330 /* FacebookCore in Frameworks */,
 				C7D3C76229F11B6200109330 /* FirebaseAnalytics in Frameworks */,
@@ -91,6 +101,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C735609329F27381007408F6 /* GAD */ = {
+			isa = PBXGroup;
+			children = (
+				C735609429F27391007408F6 /* GADConfig.json */,
+				C7510BDE29F2683C00CD423C /* GADUtil.swift */,
+				C735608F29F26DF8007408F6 /* GAD+Ext.swift */,
+				C735609129F26E0F007408F6 /* GADNativeView.swift */,
+			);
+			path = GAD;
+			sourceTree = "<group>";
+		};
 		C7D6F4C729EE83C900045FCC = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +136,7 @@
 				C794AB9129EE99800063D83B /* AppUtil.swift */,
 				C712953029EFBD0B007D8B1C /* BrowserUtil.swift */,
 				C712954629EFE211007D8B1C /* FirebaseUtil.swift */,
+				C735609329F27381007408F6 /* GAD */,
 				C794AB8529EE92030063D83B /* RootVC.swift */,
 				C794AB8929EE93E90063D83B /* LaunchVC.swift */,
 				C794AB8A29EE93E90063D83B /* LaunchVC.xib */,
@@ -137,7 +159,7 @@
 				C7D6F4DC29EE83CB00045FCC /* Assets.xcassets */,
 				C794AB9329EE9B170063D83B /* Main.storyboard */,
 				C7D6F4DE29EE83CB00045FCC /* LaunchScreen.storyboard */,
-				C7D3C77729F137BE00109330 /* GoogleService-Info.plist */,
+				C75FDCDD29F4FCF00034D7BD /* GoogleService-Info.plist */,
 				C7D6F4E129EE83CB00045FCC /* Info.plist */,
 			);
 			path = OceanBrowser;
@@ -165,6 +187,7 @@
 				C7D3C76329F11B6200109330 /* FirebaseCrashlytics */,
 				C7D3C76529F11B6200109330 /* FirebaseRemoteConfig */,
 				C7D3C76829F11BA000109330 /* FacebookCore */,
+				C7510BDC29F25EED00CD423C /* GoogleMobileAds */,
 			);
 			productName = OceanBrowser;
 			productReference = C7D6F4D029EE83C900045FCC /* OceanBrowser.app */;
@@ -198,6 +221,7 @@
 				C7D3C75D29F11ADA00109330 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				C7D3C76029F11B6200109330 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				C7D3C76729F11BA000109330 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				C7510BDB29F25EED00CD423C /* XCRemoteSwiftPackageReference "GoogleMobileAds" */,
 			);
 			productRefGroup = C7D6F4D129EE83C900045FCC /* Products */;
 			projectDirPath = "";
@@ -213,7 +237,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7D3C77829F137BF00109330 /* GoogleService-Info.plist in Resources */,
 				C712953529EFBDA3007D8B1C /* ListVC.xib in Resources */,
 				C712954129EFD623007D8B1C /* TermsVC.xib in Resources */,
 				C712953929EFC58C007D8B1C /* ListCell.xib in Resources */,
@@ -223,9 +246,11 @@
 				C794AB8C29EE93E90063D83B /* LaunchVC.xib in Resources */,
 				C794AB9029EE93F60063D83B /* HomeVC.xib in Resources */,
 				C7D6F4DD29EE83CB00045FCC /* Assets.xcassets in Resources */,
+				C735609529F27392007408F6 /* GADConfig.json in Resources */,
 				C712952B29EF9394007D8B1C /* HomeBrowserCell.xib in Resources */,
 				C712952F29EF93B7007D8B1C /* HomeBottomCell.xib in Resources */,
 				C712953D29EFD482007D8B1C /* PrivacyVC.xib in Resources */,
+				C75FDCDE29F4FCF00034D7BD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,8 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C735609229F26E0F007408F6 /* GADNativeView.swift in Sources */,
 				C794AB8729EE92030063D83B /* RootVC.swift in Sources */,
 				C712954729EFE211007D8B1C /* FirebaseUtil.swift in Sources */,
+				C7510BDF29F2683C00CD423C /* GADUtil.swift in Sources */,
 				C712953C29EFD482007D8B1C /* PrivacyVC.swift in Sources */,
 				C794AB8F29EE93F60063D83B /* HomeVC.swift in Sources */,
 				C794AB8B29EE93E90063D83B /* LaunchVC.swift in Sources */,
@@ -245,6 +272,7 @@
 				C7D6F4D429EE83C900045FCC /* AppDelegate.swift in Sources */,
 				C712952E29EF93B7007D8B1C /* HomeBottomCell.swift in Sources */,
 				C712954029EFD623007D8B1C /* TermsVC.swift in Sources */,
+				C735609029F26DF8007408F6 /* GAD+Ext.swift in Sources */,
 				C712953829EFC58C007D8B1C /* ListCell.swift in Sources */,
 				C712953429EFBDA3007D8B1C /* ListVC.swift in Sources */,
 				C712952A29EF9394007D8B1C /* HomeBrowserCell.swift in Sources */,
@@ -387,8 +415,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 20230423;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OceanBrowser/Info.plist;
@@ -404,7 +433,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bros.oceanapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -422,8 +451,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 20230423;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OceanBrowser/Info.plist;
@@ -439,7 +469,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bros.oceanapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -476,6 +506,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C7510BDB29F25EED00CD423C /* XCRemoteSwiftPackageReference "GoogleMobileAds" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/quanghits/GoogleMobileAds";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		C7D3C75D29F11ADA00109330 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
@@ -503,6 +541,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C7510BDC29F25EED00CD423C /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7510BDB29F25EED00CD423C /* XCRemoteSwiftPackageReference "GoogleMobileAds" */;
+			productName = GoogleMobileAds;
+		};
 		C7D3C75E29F11ADA00109330 /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C7D3C75D29F11ADA00109330 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
